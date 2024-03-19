@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js" defer></script>
+  <title>PokemonFinder</title>
+</head>
+
+<body class="m-0 p-0">
+  <h1 class="heading mx-auto p-4 font-bold text-center text-4xl">PokemonFinder</h1>
+  <div class="flex justify-center p-4">
+    <img class="w-64 pb-0.5" src="./img/pokeball-logo-DC23868CA1-seeklogo.com.png" alt="logo">
+  </div>
+  <div class="container mx-auto flex flex-col justify-center items-center ">
+    <div>
+      <input class="w-64 px-4 py-2 border rounded-md mb-5 focus:outline-none focus:border-rose-500" type="text"
+        id="pokemonName" placeholder="Enter Pokemon Name">
+    </div>
+
+    <button
+      class="px-5 py-2 mb-10 rounded-md text-white focus:ring-red-400 shadow-lg transform active:scale-75 transition-transform  bg-rose-600 "
+      onclick="fetchData()">Fetch Pokemon
+    </button>
+
+    <div class="poke-card shadow-lg p-1 flex flex-wrap items-center justify-center">
+      <!-- here is the poke-card will appear -->
+    </div>
+
+  </div>
+</body>
+
+</html>
